@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b1028">
+
+  <title>Our Little World 💗</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Kannada:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <!-- ENTRY / OTP SCREEN -->
+  <main class="entry-screen" id="entryScreen">
+
+    <div class="flower flower-one">✿</div>
+    <div class="flower flower-two">❀</div>
+    <div class="flower flower-three">✿</div>
+
+    <div class="entry-card">
+
+      <div class="lily-icon">🌸</div>
+
+      <p class="eyebrow">A LITTLE PLACE MADE FOR YOU</p>
+
+      <h1>Welcome to<br><span>our little world</span></h1>
+
+      <p class="entry-subtitle">
+        Some friendships are too special for ordinary words.
+        This little surprise is just for you. 💗
+      </p>
+
+      <!-- PHONE STEP -->
+      <form id="entryForm">
+
+        <div id="phoneStep">
+
+          <label for="mobileNumber">YOUR MOBILE NUMBER</label>
+
+          <div class="phone-input">
+            <span class="country-code">+91</span>
+            <input
+              id="mobileNumber"
+              type="tel"
+              placeholder="Enter 10-digit number"
+              maxlength="10"
+              inputmode="numeric"
+              autocomplete="tel-national"
+              required
+            >
+          </div>
+
+          <p class="helper-text">
+            Demo verification only. No SMS will be sent.
+          </p>
+
+          <button class="primary-button" type="submit">
+            Continue with love <span>♡</span>
+          </button>
+
+        </div>
+
+        <!-- OTP STEP -->
+        <div id="otpStep" hidden>
+
+          <div class="otp-icon">💌</div>
+
+          <h2 class="otp-title">One little secret...</h2>
+
+          <p class="otp-description">
+            Enter the special code to open your surprise.
+          </p>
+
+          <div class="demo-code">
+            <span>YOUR DEMO OTP</span>
+            <strong>123456</strong>
+          </div>
+
+          <label for="otpInput">ENTER YOUR 6-DIGIT CODE</label>
+
+          <input
+            id="otpInput"
+            class="otp-input"
+            type="text"
+            maxlength="6"
+            inputmode="numeric"
+            autocomplete="one-time-code"
+            placeholder="••••••"
+          >
+
+          <button class="primary-button" id="verifyBtn" type="button">
+            Unlock our world <span>♡</span>
+          </button>
+
+          <button class="back-button" id="backBtn" type="button">
+            ← Change number
+          </button>
+
+        </div>
+
+        <p class="error-message" id="entryError" role="alert"></p>
+
+      </form>
+
+      <p class="bottom-note">Made with a little extra love ✨</p>
+
+    </div>
+  </main>
+
+
+  <!-- MAIN WEBSITE -->
+  <main class="main-site" id="mainSite" hidden>
+
+    <!-- HERO -->
+    <section class="hero-section">
+
+      <div class="hero-petal petal-one">✿</div>
+      <div class="hero-petal petal-two">❀</div>
+      <div class="hero-petal petal-three">✧</div>
+
+      <p class="eyebrow">A FRIENDSHIP THAT FEELS LIKE HOME</p>
+
+      <h1>
+        You're my favourite<br>
+        <span>kind of forever.</span>
+      </h1>
+
+      <p class="hero-description">
+        Not every person becomes a beautiful part of our story.
+        But some people make every chapter worth remembering.
+      </p>
+
+      <div class="hero-heart">♡</div>
+
+      <a href="#our-story" class="scroll-link">
+        SCROLL TO EXPLORE <span>↓</span>
+      </a>
+
+    </section>
+
+
+    <!-- PHOTO SECTION -->
+    <section class="photo-section" id="our-story">
+
+      <div class="section-heading">
+        <p class="eyebrow">A MEMORY TO KEEP</p>
+        <h2>My favourite <span>human</span></h2>
+        <p>One picture, a thousand memories. 💗</p>
+      </div>
+
+      <div class="photo-scene" id="photoScene">
+
+        <div class="photo-card">
+
+          <div class="photo-top">A LITTLE PIECE OF HAPPINESS ♡</div>
+
+          <img
+            src="bestie-photo.jpeg"
+            alt="A special memory with my best friend"
+            class="bestie-photo"
+          >
+
+          <div class="photo-caption">
+            <span>Home is you.</span>
+            <span class="caption-heart">💗</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="photo-note">
+        Some memories deserve their own little place in the world.
+      </p>
+
+    </section>
+
+
+    <!-- FRIENDSHIP MESSAGE -->
+    <section class="message-section">
+
+      <div class="message-card">
+
+        <p class="eyebrow">A NOTE FROM MY HEART</p>
+
+        <h2>To my favourite <span>person...</span></h2>
+
+        <p class="message-text">
+          Thank you for being the person I can laugh with,
+          share random things with, and be completely myself around.
+          Life feels a little brighter with you in it.
+        </p>
+
+        <p class="kannada-message">
+          ನೀನು ನನ್ನ ಜೀವನದಲ್ಲಿ ಇರುವುದೇ ಒಂದು ಸುಂದರವಾದ ಉಡುಗೊರೆ.
+          ನಮ್ಮ ಸ್ನೇಹ ಸದಾ ಹೀಗೆಯೇ ಇರಲಿ. 💗
+        </p>
+
+        <div class="message-divider">✧ ♡ ✧</div>
+
+        <p class="message-signature">
+          Always your bestie.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- REASONS -->
+    <section class="reasons-section">
+
+      <div class="section-heading">
+        <p class="eyebrow">LITTLE THINGS THAT MATTER</p>
+        <h2>Why you're <span>special</span></h2>
+      </div>
+
+      <div class="reason-grid">
+
+        <article class="reason-card">
+          <div>🌷</div>
+          <h3>Your smile</h3>
+          <p>It makes even an ordinary day feel special.</p>
+        </article>
+
+        <article class="reason-card">
+          <div>🫶</div>
+          <h3>Your presence</h3>
+          <p>Everything feels better when you're around.</p>
+        </article>
+
+        <article class="reason-card">
+          <div>✨</div>
+          <h3>Our memories</h3>
+          <p>Every silly moment becomes a favourite memory.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SURPRISE -->
+    <section class="surprise-section">
+
+      <div class="surprise-card">
+
+        <div class="surprise-flower">🌸</div>
+
+        <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+
+        <h2>One more thing...</h2>
+
+        <p id="surpriseMessage" class="surprise-message">
+          You are one of my favourite people in this entire world. 💗
+        </p>
+
+        <button id="surpriseBtn" class="primary-button" type="button">
+          Open another little message ♡
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <div class="footer-heart">♡</div>
+
+      <h2>Our friendship, our forever.</h2>
+
+      <p>ನಮ್ಮ ಸ್ನೇಹ ಸದಾ ಹೀಗೆಯೇ ಇರಲಿ. 💗</p>
+
+      <span>MADE WITH LOVE · JUST FOR YOU</span>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
